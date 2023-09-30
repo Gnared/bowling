@@ -90,6 +90,7 @@ public class Bowling : MonoBehaviour
     {
         _rb.AddForce(forcePower / 10 * transform.forward, ForceMode.Impulse);
         text.GetComponent<Text>().showButton("Lucky");
+        effectLine.SetActive(false);
         isShot = true;
     }
 
